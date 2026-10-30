@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Mini Game Arcade — Free browser mini-games</title>
+<meta name="description" content="Mini Game Arcade is a small, fast, static arcade site. Play Slice Rush, an original fruit-slicing mini-game, in your browser. No downloads, no sign-in, no ads.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#games">Skip to games</a>
+<header class="site-header arcade-header">
+  <h1>🎮 Mini Game Arcade</h1>
+  <p class="tagline">Small, fast browser games. No downloads, no sign-in, no ads.</p>
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="index.html" aria-current="page">Home</a>
+    <a href="games/slice-rush/">Slice Rush</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms</a>
+  </nav>
+</header>
+
+<main class="page-shell">
+  <section class="intro">
+    <h2>Play a quick game, right in your browser</h2>
+    <p>Mini Game Arcade is a tiny arcade site made with plain HTML, CSS and JavaScript. Every game listed here is actually playable — there are no placeholder cards and no buttons that lead nowhere. Right now there is one game, Slice Rush. More games will be added here only once they are fully working.</p>
+  </section>
+
+  <section id="games" aria-labelledby="games-heading">
+    <h2 id="games-heading">Games</h2>
+    <div class="game-grid">
+      <article class="game-card">
+        <div class="thumb" role="img" aria-label="Original illustration: three simple code-drawn fruits, one sliced in half, and a dark bomb to avoid">
+          <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="320" height="180" rx="16" fill="#aee9ff"/>
+            <circle cx="75" cy="105" r="42" fill="#ef4444"/>
+            <ellipse cx="62" cy="92" rx="12" ry="8" fill="#ffffff" opacity="0.45"/>
+            <path d="M75 63 Q75 52 82 48" stroke="#92400e" stroke-width="4" fill="none"/>
+            <ellipse cx="88" cy="56" rx="12" ry="6" fill="#22c55e" transform="rotate(-25 88 56)"/>
+            <circle cx="175" cy="100" r="40" fill="#f97316"/>
+            <ellipse cx="162" cy="88" rx="11" ry="7" fill="#ffffff" opacity="0.45"/>
+            <circle cx="260" cy="105" r="38" fill="#1f2937"/>
+            <path d="M260 67 Q268 52 278 50" stroke="#f59e0b" stroke-width="4" fill="none"/>
+            <circle cx="280" cy="48" r="6" fill="#f97316"/>
+            <text x="260" y="110" text-anchor="middle" font-size="26" fill="#ffffff">✹</text>
+            <line x1="130" y1="30" x2="220" y2="150" stroke="#f97316" stroke-width="5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Slice Rush</h3>
+        <p>Slice fruit as it flies across the screen, build combos for bonus points, and avoid the bombs. You have 60 seconds and 3 lives.</p>
+        <p class="card-meta">Controls: mouse drag or touch swipe &middot; Keyboard: Space, R, M</p>
+        <a class="btn primary" href="games/slice-rush/">Play Slice Rush</a>
+      </article>
+    </div>
+    <p class="note">More games will appear here only when they are complete and tested. Nothing is listed as playable before it works.</p>
+  </section>
+
+  <section class="how-it-works">
+    <h2>How Slice Rush works</h2>
+    <ul>
+      <li><strong>Score:</strong> each fruit is worth 10 points.</li>
+      <li><strong>Combo:</strong> slicing fruit quickly, one after another, adds a bonus — the 2nd in a quick chain adds +5, the 3rd adds +10, and so on.</li>
+      <li><strong>Bombs:</strong> do not slice a bomb. A bomb costs one life. You have 3 lives.</li>
+      <li><strong>Timer:</strong> the game lasts 60 seconds, or ends early if you lose all 3 lives.</li>
+      <li><strong>Sound:</strong> effects are generated in your browser with Web Audio after you press a button, and can be muted at any time.</li>
+    </ul>
+    <p>Your score is kept only on the game page while you play. There is no account, no leaderboard and nothing is uploaded to a server.</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <nav aria-label="Footer navigation">
+    <a href="about.html">About</a> &middot;
+    <a href="contact.html">Contact</a> &middot;
+    <a href="privacy.html">Privacy Policy</a> &middot;
+    <a href="terms.html">Terms</a>
+  </nav>
+  <p>Mini Game Arcade — one working game so far: Slice Rush. Built with plain HTML, CSS and JavaScript.</p>
+</footer>
+</body>
+</html>
